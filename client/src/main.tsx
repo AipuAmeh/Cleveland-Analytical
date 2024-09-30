@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom';
-import HomePage from './Pages/HomePage.tsx';
+import HomePage from './pages/HomePage.tsx';
 import App from './App.tsx'
 import './index.css'
 
