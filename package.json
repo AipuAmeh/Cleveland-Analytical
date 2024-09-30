@@ -1,0 +1,21 @@
+{
+  "name": "cleveland-analytical",
+  "version": "1.0.0",
+  "description": "A website for Cleveland Analytical, LLC",
+  "main": "index.js",
+  "scripts": {
+    "develop": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AipuAmeh/Cleveland-Analytical.git"
+  },
+  "author": "ABA Creations",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AipuAmeh/Cleveland-Analytical/issues"
+  },
+  "homepage": "https://github.com/AipuAmeh/Cleveland-Analytical#readme"
+}
