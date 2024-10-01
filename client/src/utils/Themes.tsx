@@ -9,6 +9,9 @@ const theme = extendTheme({
             violet: '#502F4C',
             chineseViolet: '#70587C',
             black: '#000000'
+        },
+        transparent: {
+            thistle: 'rgba(200, 184, 219, 0.5)'
         }
     }
 })

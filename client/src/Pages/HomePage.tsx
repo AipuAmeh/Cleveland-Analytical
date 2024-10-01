@@ -1,6 +1,7 @@
 import { Box, Flex, FormControl, Icon, Image, Text } from "@chakra-ui/react";
 import { WarningIcon} from '@chakra-ui/icons';
 import Features from "../components/HomePageFeature";
+import GetInTouchForm from "../components/GetInTouchForm";
 
 const HomePage = () => {
 return (
@@ -23,7 +24,7 @@ return (
               >Cleveland <br /> Analytical</Text>
             </Box>
         </Box>
-        <Box>
+        <Box mb={5}>
             <Text textAlign='center' fontSize='2em' mt='0.5em'>What We Do</Text>
             <Flex gap='3em' px='4em' py={6}>
           <Features 
@@ -43,11 +44,7 @@ return (
           />
             </Flex>
         </Box>
-        <Box>
-            <FormControl>
-                
-            </FormControl>
-        </Box>
+< GetInTouchForm />
     </Box>
 )
 };
