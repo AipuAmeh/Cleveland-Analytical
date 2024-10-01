@@ -30,7 +30,7 @@ const GetInTouchForm = () => {
         <Text fontSize="2em" pb="1.5em">
           Get In Touch With Us
         </Text>
-        <FormControl bg="brand.thistle" p="3em" mb={8} shadow="md">
+        <FormControl bg="brand.thistle" p="3em" mb='5em' shadow="md">
           <Input placeholder="Name" type="text" variant="filled" />
 
           <Input
