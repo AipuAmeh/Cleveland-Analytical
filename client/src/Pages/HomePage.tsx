@@ -1,4 +1,4 @@
-import { Box, Flex, FormControl, Icon, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
 import { WarningIcon} from '@chakra-ui/icons';
 import Features from "../components/HomePageFeature";
 import GetInTouchForm from "../components/GetInTouchForm";
