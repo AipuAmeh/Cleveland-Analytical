@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Flex alignItems="center" gap="2" minWidth="max-content" p={4}>
+    <Flex alignItems="center" gap="2" minWidth="max-content" p={0}>
       <Box p={3}> 
         {" "}
-        <Image
-     
+        <Image     
         boxSize='50px'
         w='100%'
         src='src/images/cleveland-analytical.jpeg'
