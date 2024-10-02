@@ -5,6 +5,7 @@ import theme from './utils/Themes.tsx';
 import HomePage from './pages/HomePage.tsx';
 import App from './App.tsx'
 import './index.css'
+import About from './pages/About.tsx';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />
+      },
+      {
+        path: '/about',
+        element: <About />
       }
 
     ]
