@@ -23,15 +23,24 @@ return (
        </Flex>
        <Flex  direction='column' bg='transparent.thistle'>
         <Text fontSize='2em' textAlign='center' mt='1.5em'>Meet The Team</Text>
-        <Flex direction='row' justifyContent='center'>
-        <Box w='30%' >
-        <BioCards />
+        <Flex direction='row' justifyContent='center' gap={'3em'}>
+        <Box w='25%' >
+        <BioCards
+        name={'Ozimba Anyangwe'}
+        bio={'Ozimba Anyangwe is Chief Quality Officer. He has experience as a chemist running US EPA methods at Cleveland Water. Ozimba has experience teaching a first-year chemistry lab at Cuyahoga Community College and holds an MBA from Cleveland State University.'}
+        />
         </Box>
-        <Box w='30%'>
-        <BioCards />
+        <Box w='25%'>
+        <BioCards
+        name={'Dr. Michael Fricke'}
+        bio={'Michael Fricke, Ph.D. is Chief Scientific Officer. He has been an analytical development chemist in the pharmaceutical industry since 2006. He is an atomic spectroscopy specialist and Counselor for the Akron Section of the American Chemical Society. '}
+        />
         </Box>
-        <Box w='30%'>
-        <BioCards />
+        <Box w='25%'>
+        <BioCards
+        name={'Tyler Akbar'}
+        bio={'Akbar Tyler is Chief Executive Officer. He has started several small businesses and was previously Director of Training and Healthy Homes for Environmental Health Watch. Akbar conducts home inspections for Lead and is a Lead risk assessor. '}
+        />
         </Box>
         </Flex>
 
