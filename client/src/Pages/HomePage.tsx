@@ -18,14 +18,14 @@ return (
                      position="absolute"
                      top="30%"
                      color="brand.black"
-                     fontSize="4em"
+                     fontSize="3em"
                      fontWeight="bold"
                      mr='3em'
               >Cleveland <br /> Analytical</Text>
             </Box>
         </Box>
-        <Box mb={5}>
-            <Text textAlign='center' fontSize='2em' mt='0.5em'>What We Do</Text>
+        <Box py='3em'>
+            <Text textAlign='center' fontSize='2em'>What We Do</Text>
             <Flex gap='3em' px='4em' py={6}>
           <Features 
           icon={<Icon as={WarningIcon} boxSize={6} />}

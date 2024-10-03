@@ -3,7 +3,7 @@ import { Box, Button, Flex, FormControl, FormHelperText, Input, Text, Textarea }
 
 const ContactUs = () => {
   return (
-    <Box p="5em">
+    <Box p="5em" >
       <Text fontSize="3em">How Can We Help?</Text>
       <Flex>
         <Box w="30%">
@@ -29,7 +29,7 @@ const ContactUs = () => {
           </Box>
 
         </Box>
-        <Box w="70%" ml='2em'>
+        <Box w="70%" ml='3em'>
           <Text mt='2em' fontSize='1em' fontWeight='bold'>We want to hear from you!</Text>
           <FormControl mt='1em' >
           <Input placeholder="Name" type="text" variant="filled" size='lg' />
