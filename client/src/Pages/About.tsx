@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Square, Text } from "@chakra-ui/react";
 import BioCards from "../components/BioCards";
 
 const About = () => {
@@ -42,10 +42,16 @@ return (
         bio={'Akbar Tyler is Chief Executive Officer. He has started several small businesses and was previously Director of Training and Healthy Homes for Environmental Health Watch. Akbar conducts home inspections for Lead and is a Lead risk assessor. '}
         />
         </Box>
-        </Flex>
-
-      
+        </Flex>  
        </Flex>
+       <Box display='flex' flexDirection='row' gap={5}>
+<Square size='300px' bg='brand.chineseViolet'>
+Forms
+</Square>
+<Square size='300px' bg='brand.chineseViolet'>
+    Contact Us
+</Square>
+</Box>
     </Box>
 )
 }
