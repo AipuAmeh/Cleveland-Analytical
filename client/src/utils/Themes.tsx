@@ -11,7 +11,7 @@ const theme = extendTheme({
             black: '#000000'
         },
         transparent: {
-            thistle: 'rgba(200, 184, 219, 0.5)'
+            thistle: 'rgba(200, 184, 219, 0.3)'
         }
     }
 })
