@@ -22,10 +22,10 @@ const Header = () => {
         <Link to='/about'>
         <Text>About</Text>
         </Link>
-        <Link to='#'>
+        <Link to='/contact-us'>
         <Text>Contact Us</Text>
         </Link>
-        <Link to='#'>
+        <Link to='/forms'>
         <Text>Forms</Text>
         </Link>
       </Box>
