@@ -5,7 +5,10 @@ import theme from './utils/Themes.tsx';
 import HomePage from './pages/HomePage.tsx';
 import App from './App.tsx'
 import './index.css'
+
 import About from './pages/About.tsx';
+import ContactUs from './pages/ContactUs.tsx';
+import Forms from './pages/Forms.tsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,14 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />
+      },
+      {
+        path: '/contact-us',
+        element: <ContactUs />
+      },
+      {
+        path: '/forms',
+        element: <Forms />
       }
 
     ]
