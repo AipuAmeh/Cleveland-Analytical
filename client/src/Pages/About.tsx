@@ -44,11 +44,11 @@ return (
         </Box>
         </Flex>  
        </Flex>
-       <Box display='flex' flexDirection='row' gap={5}>
-<Square size='300px' bg='brand.chineseViolet'>
+       <Box display='flex' flexDirection='row' gap='5em' color='white' justifyContent='center' py='3em' fontSize='2em' >
+<Square size='250px' bg='brand.chineseViolet' shadow="lg" fontWeight='bold'>
 Forms
 </Square>
-<Square size='300px' bg='brand.chineseViolet'>
+<Square size='250px' bg='brand.chineseViolet' shadow="lg" fontWeight='bold'>
     Contact Us
 </Square>
 </Box>
