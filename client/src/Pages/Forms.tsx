@@ -1,4 +1,4 @@
-import { Box, Image, Square, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 
 const Forms = () => {
 return (
@@ -21,14 +21,16 @@ return (
             </Box>  
 
     </Box>
-    <Square
-            size="250px"
-            bg="brand.chineseViolet"
-            shadow="lg"
-            fontWeight="bold"
-          >
-            Contact Us
-          </Square>
+    <Box p='6em'>
+    <Image
+w='378px'
+h='297px'
+src='src/images/plain-lead.png'>
+
+  </Image>
+          <Text mt='0.5em' fontSize='1.7em'>Lead Chain of Custody</Text>
+    </Box>
+
     </Box>
 )
 

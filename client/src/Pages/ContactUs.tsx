@@ -6,7 +6,7 @@ const ContactUs = () => {
     <Box p="5em" >
       <Text fontSize="3em">How Can We Help?</Text>
       <Flex>
-        <Box w="30%">
+        <Box w="30%" mt='3em'>
           <Text mt="4em" fontSize='lg' lineHeight='1.75em'>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Leo accumsan
             lacinia euismod velit justo ante. Bibendum ac posuere ipsum torquent
@@ -18,7 +18,7 @@ const ContactUs = () => {
             dapibus orci aenean viverra habitasse primis in. Efficitur velit
             pretium taciti quam justo potenti? 
           </Text>
-          <Box>
+          <Box mt='4em'>
           <Text mt='2em' fontSize='1.75em' fontWeight='bold'>Contact Info</Text>
           <Text mt='0.5em'>
           <EmailIcon boxSize={5} mr='0.5em'  /> info@clevelandanalytics.com
@@ -29,7 +29,7 @@ const ContactUs = () => {
           </Box>
 
         </Box>
-        <Box w="70%" ml='3em'>
+        <Box w="70%" ml='3em' mt='3em'>
           <Text mt='2em' fontSize='1em' fontWeight='bold'>We want to hear from you!</Text>
           <FormControl mt='1em' >
           <Input placeholder="Name" type="text" variant="filled" size='lg' />
