@@ -1,12 +1,14 @@
-import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import { WarningIcon} from '@chakra-ui/icons';
 import Features from "../components/HomePageFeature";
 import GetInTouchForm from "../components/GetInTouchForm";
 
 const HomePage = () => {
+    const mobileSiteName = useBreakpointValue({ base: '2em', sm: '2em', md: '3em', lg: '3em'});
+    const whatWeDoMobile = useBreakpointValue({ base: 'column', sm: 'column', md: 'row', lg: 'row'});
 return (
     <Box> 
-        <Box position="relative" display="inline-block">
+        <Box position="relative" display='flex' id='hero-section'>
             <Image
             boxSize='650px'
             w='100%'  
@@ -20,13 +22,13 @@ return (
                      color="brand.black"
                      fontSize="3em"
                      fontWeight="bold"
-                     mr='3em'
+                     mr={mobileSiteName}
               >Cleveland <br /> Analytical</Text>
             </Box>
         </Box>
         <Box py='3em'>
             <Text textAlign='center' fontSize='2em'>What We Do</Text>
-            <Flex gap='3em' px='4em' py={6}>
+            <Flex gap='3em' px='4em' py={6} direction={whatWeDoMobile}>
           <Features 
           icon={<Icon as={WarningIcon} boxSize={6} />}
           title='Lorem Ipsum'

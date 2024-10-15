@@ -6,13 +6,24 @@ import {
   FormHelperText,
   Textarea,
   Button,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 
 const GetInTouchForm = () => {
+  // why is direction erroring?
+  const mobileFormLayout = useBreakpointValue({ base:'column', sm: 'column', md: 'row', lg: 'row'});
+  const mobileFormWidth = useBreakpointValue({ base:'100%', sm: '100%', md: '50%', lg: '50%'});
+  const mobileSectionMargin = useBreakpointValue({ base: '3em', sm: '3em', md: '6em', lg: '6em'});
   return (
-    <Box bg="transparent.thistle" display="flex">
-      <Box w="50%" mt="12em" px="4em">
-        <Text fontSize='lg' lineHeight='1.75em'>
+    <Box bg="transparent.thistle">
+    <Box  display="flex" id='get-in-touch' flexDirection={mobileFormLayout}>
+ 
+      <Box w={mobileFormWidth}>
+      <Text fontSize="2em"  pt='1.5em' pl='2em'>
+    Get In Touch With Us
+  </Text>
+  <Box px="4em"  mt={mobileSectionMargin} >
+  <Text fontSize='lg' lineHeight='1.75em'>
           Lorem ipsum odor amet, consectetuer adipiscing elit. Scelerisque
           tempor a sapien montes malesuada donec curabitur aenean. Per penatibus
           accumsan eget ridiculus elementum interdum nisl morbi quam. Vel ligula
@@ -25,11 +36,10 @@ const GetInTouchForm = () => {
           placerat dapibus mus dolor consectetur torquent facilisi consectetur
           tortor. Eu velit molestie tristique finibus donec dictum donec.
         </Text>
+  </Box>
+
       </Box>
-      <Box w="50%" mt="4em" px="5em">
-        <Text fontSize="2em" pb="1.5em">
-          Get In Touch With Us
-        </Text>
+      <Box w={mobileFormWidth} mt="5em" px="5em">
         <FormControl bg="brand.thistle" p="3em" mb='5em' shadow="md">
           <Input placeholder="Name" type="text" variant="filled" />
 
@@ -63,6 +73,8 @@ const GetInTouchForm = () => {
         </FormControl>
       </Box>
     </Box>
+    </Box>
+
   );
 };
 
