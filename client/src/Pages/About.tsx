@@ -10,11 +10,12 @@ const About = () => {
   const teamWidth = useBreakpointValue({ base: '90%', sm: '90%', md: '25%', lg: '25%'});
   const teamLayout = useBreakpointValue({ base: 'center', sm: 'center', md: 'none', lg: 'none'});
   const mobileMargin = useBreakpointValue({ base: 0, sm: 0, md: '6em', lg: '6em'});
+  const mobileGeneralFont = useBreakpointValue({ base: '1.5em', sm: '1.5em', md: '1em', lg: '1em'});
 
   return (
     <Box>
-      <Flex direction={mobileLayout} justifyContent={teamLayout} px={mobileHeaderPadding} pt="3em">
-        <Box boxSize="xl" ml="4em" w={mobileHeaderWidth}>
+      <Box display='flex' flexDirection={mobileLayout} justifyContent={teamLayout} pt="3em" >
+        <Box boxSize="xl"  w={mobileHeaderWidth} ml='4em'>
           <Image
             mt="1.5em"
             h="480px"
@@ -25,7 +26,7 @@ const About = () => {
         </Box>
         <Box ml={mobileMargin} w={mobileHeaderWidth} >
           <Text fontSize="3em">Cleveland Analytical Lab</Text>
-          <Text mt="1em" lineHeight="1.75em" >
+          <Text mt="1em" lineHeight="1.75em" fontSize={mobileGeneralFont}>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Leo accumsan
             lacinia euismod velit justo ante. Bibendum ac posuere ipsum torquent
             mus. Fames fames litora lacinia platea quam venenatis ante. Ex
@@ -36,12 +37,12 @@ const About = () => {
             finibus ultrices dictum accumsan magna.
           </Text>
         </Box>
-      </Flex>
-      <Flex direction="column" bg="transparent.thistle">
-        <Text fontSize="2em" textAlign="center" mt="1.5em">
+      </Box>
+      <Flex direction="column" bg="transparent.thistle" py='2em'>
+        <Text fontSize="2em" textAlign="center" mt="1em">
           Meet The Team
         </Text>
-        <Flex direction={mobileLayout} justifyContent="center" alignItems={teamLayout} gap={"3em"}>
+        <Flex direction={mobileLayout} justifyContent="center" alignItems={teamLayout} gap={"3em"} mt='2em'>
           <Box w={teamWidth}>
             <BioCards
               name={"Ozimba Anyangwe"}
@@ -74,6 +75,7 @@ const About = () => {
         gap="5em"
         color="white"
         justifyContent="center"
+        px='3em'
         py="3em"
         fontSize="2em"
       >
