@@ -7,11 +7,12 @@ import {
   Textarea,
   Button,
   useBreakpointValue,
+  ResponsiveValue
 } from "@chakra-ui/react";
 
 const GetInTouchForm = () => {
   // why is direction erroring?
-  const mobileFormLayout = useBreakpointValue({ base:'column', sm: 'column', md: 'row', lg: 'row'});
+  const mobileFormLayout = useBreakpointValue<ResponsiveValue<'row' | 'column' | 'row-reverse' | 'column-reverse'>>({ base:'column', sm: 'column', md: 'row', lg: 'row'});
   const mobileFormWidth = useBreakpointValue({ base:'100%', sm: '100%', md: '50%', lg: '50%'});
   const mobileSectionMargin = useBreakpointValue({ base: '3em', sm: '3em', md: '6em', lg: '6em'});
   return (

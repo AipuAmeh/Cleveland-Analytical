@@ -1,11 +1,11 @@
-import { Box, Flex, Icon, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image, Text, useBreakpointValue, ResponsiveValue } from "@chakra-ui/react";
 import { WarningIcon} from '@chakra-ui/icons';
 import Features from "../components/HomePageFeature";
 import GetInTouchForm from "../components/GetInTouchForm";
 
 const HomePage = () => {
     const mobileSiteName = useBreakpointValue({ base: '2em', sm: '2em', md: '3em', lg: '3em'});
-    const whatWeDoMobile = useBreakpointValue({ base: 'column', sm: 'column', md: 'row', lg: 'row'});
+    const whatWeDoMobile = useBreakpointValue<ResponsiveValue<'row' | 'column' | 'row-reverse' | 'column-reverse'>>({ base: 'column', sm: 'column', md: 'row', lg: 'row'});
 return (
     <Box> 
         <Box position="relative" display='flex' id='hero-section'>
