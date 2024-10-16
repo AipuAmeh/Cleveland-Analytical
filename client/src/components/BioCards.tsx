@@ -11,9 +11,11 @@ const BioCards = ({ name, bio }: bioCardProps) => {
   const mobileGap = useBreakpointValue({ base: 4, sm: 4, md: 5, lg: 5});
   const mobileMargin = useBreakpointValue({ base: '2em', sm: '1.5em', md: '3em', lg: 'em'});
   const mobileTopMargin = useBreakpointValue({ base: '8', sm: '8', md: '6', lg: '6'});
+  const mobileTextTopMargin = useBreakpointValue({ base: '1em', sm: '1em', md: '0.5em', lg: '0.5em'});
+  const mobileBottomMargin = useBreakpointValue({ base: '1em', sm: '1em', md: '3em', lg: '3em'});
 
   return (
-    <Stack alignItems="center" mt={mobileMargin} mb="3em">
+    <Stack alignItems="center" mt={mobileMargin} mb={mobileBottomMargin}>
       <Image
         src="gibbresh.png"
         fallbackSrc="https://via.placeholder.com/250"
@@ -22,10 +24,10 @@ const BioCards = ({ name, bio }: bioCardProps) => {
         w="70%"
       />
       <Stack mt={mobileTopMargin} spacing="3" gap={mobileGap}>
-        <Heading size={headingFont} textAlign="center">
+        <Heading size={headingFont} textAlign="center" mt={mobileTextTopMargin}>
           {name}
         </Heading>
-        <Text fontSize={mobileBioFont}>{bio}</Text>
+        <Text fontSize={mobileBioFont} mt={mobileTextTopMargin}>{bio}</Text>
       </Stack>
     </Stack>
   );

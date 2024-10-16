@@ -6,27 +6,29 @@ const About = () => {
   // responsiveness
   const mobileLayout = useBreakpointValue<ResponsiveValue<'row' | 'column' | 'row-reverse' | 'column-reverse'>>({ base:'column', sm: 'column', md: 'row', lg: 'row'});
   const mobileHeaderWidth = useBreakpointValue({ base: '100%', sm: '100%', md: '50%', lg: '50%'});
-  const mobileHeaderPadding = useBreakpointValue({ base: 0, sm: 0, md: '4em', lg: '4em'});
+  const mobileImage = useBreakpointValue({ base: 'center', sm: 'center', md: 'none', lg: 'none'});
+  const mobilePadding = useBreakpointValue({ base: '2em', sm: '2em', md: 0, lg: 0});
   const teamWidth = useBreakpointValue({ base: '90%', sm: '90%', md: '25%', lg: '25%'});
   const teamLayout = useBreakpointValue({ base: 'center', sm: 'center', md: 'none', lg: 'none'});
-  const mobileMargin = useBreakpointValue({ base: 0, sm: 0, md: '6em', lg: '6em'});
+  const mobileMargin = useBreakpointValue({ base: 0, sm: 0, md: '3em', lg: '3em'});
+  const mobileLeftMargin = useBreakpointValue({ base: 0, sm: 0, md: '5em', lg: '5em'});
+  const mobileTopMargin = useBreakpointValue({ base: 0, sm: 0, md: '4em', lg: '4em'});
   const mobileGeneralFont = useBreakpointValue({ base: '1.5em', sm: '1.5em', md: '1em', lg: '1em'});
 
   return (
     <Box>
       <Box display='flex' flexDirection={mobileLayout} justifyContent={teamLayout} pt="3em" >
-        <Box boxSize="xl"  w={mobileHeaderWidth} ml='4em'>
+        <Box boxSize="xl" display='flex' justifyContent={mobileImage} w={mobileHeaderWidth} ml={mobileLeftMargin} mt="1.5em" h='fit-content' mb='4em'>
           <Image
-            mt="1.5em"
-            h="480px"
-            w="550px"
+            h="400px"
+            w="500px"
             src="src/images/about-img.png"
             alt="test-lead-sample"
           />
         </Box>
-        <Box ml={mobileMargin} w={mobileHeaderWidth} >
+        <Box w={mobileHeaderWidth} display='flex' flexDirection='column' alignItems={mobileImage} mx={mobileMargin} mt={'0.5em'}>
           <Text fontSize="3em">Cleveland Analytical Lab</Text>
-          <Text mt="1em" lineHeight="1.75em" fontSize={mobileGeneralFont}>
+          <Text mt={mobileTopMargin} lineHeight="1.75em" p={mobilePadding} fontSize={mobileGeneralFont}>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Leo accumsan
             lacinia euismod velit justo ante. Bibendum ac posuere ipsum torquent
             mus. Fames fames litora lacinia platea quam venenatis ante. Ex
