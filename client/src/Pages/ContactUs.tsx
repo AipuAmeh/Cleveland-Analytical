@@ -8,6 +8,9 @@ const ContactUs = () => {
   const mobileText = useBreakpointValue<ResponsiveValue<'center' | 'left' | 'right'>>({ base: 'center', sm: 'center', md: 'left', lg: 'left' });
   const mobileWidthText = useBreakpointValue({ base: '100%', sm: '100%', md: '30%', lg: '30%'});
   const mobileWidthForm = useBreakpointValue({ base: '100%', sm: '100%', md: '70%', lg: '70%'});
+  const formMobileMargin = useBreakpointValue({ base: '0', sm: '0', md:' 3em', lg: '3em'});
+  const contactAlign = useBreakpointValue<ResponsiveValue<'center' | 'left' | 'right'>>({ base: 'center', sm: 'center', md: 'left', lg: 'left' });
+  const buttonAlign = useBreakpointValue<ResponsiveValue<'center' | 'left' | 'right'>>({ base: 'center', sm: 'center', md: 'left', lg: 'left' });
 
   return (
     <Box p="5em" >
@@ -25,7 +28,7 @@ const ContactUs = () => {
             dapibus orci aenean viverra habitasse primis in. Efficitur velit
             pretium taciti quam justo potenti? 
           </Text>
-          <Box mt='4em'>
+          <Box mt='4em' textAlign={contactAlign}>
           <Text mt='2em' fontSize='1.75em' fontWeight='bold'>Contact Info</Text>
           <Text mt='0.5em'>
           <EmailIcon boxSize={5} mr='0.5em'  /> info@clevelandanalytics.com
@@ -36,7 +39,7 @@ const ContactUs = () => {
           </Box>
 
         </Box>
-        <Box w={mobileWidthForm} ml='3em' mt='3em'>
+        <Box w={mobileWidthForm} ml={formMobileMargin} mt='3em'>
           <Text mt='2em' fontSize='1em' fontWeight='bold'>We want to hear from you!</Text>
           <FormControl mt='1em' >
           <Input placeholder="Name" type="text" variant="filled" size='lg' />
@@ -66,7 +69,7 @@ const ContactUs = () => {
             variant="filled"
             size='lg'
           />
-          <Box mt="1.5em">
+          <Box mt="1.5em" display='flex' justifyContent={buttonAlign}>
             <Button bg="brand.chineseViolet" color="white" size='lg'>
               Submit
             </Button>
