@@ -1,4 +1,4 @@
-import { Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Heading, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 
 type bioCardProps = {
   name: string;
@@ -6,8 +6,16 @@ type bioCardProps = {
 };
 
 const BioCards = ({ name, bio }: bioCardProps) => {
+  const mobileBioFont = useBreakpointValue({ base: '1.5em', sm: '1.5em', md: '1em', lg: '1em'});
+  const headingFont = useBreakpointValue({ base: 'xl', sm: 'xl', md: 'md', lg: 'md'});
+  const mobileGap = useBreakpointValue({ base: 4, sm: 4, md: 5, lg: 5});
+  const mobileMargin = useBreakpointValue({ base: '2em', sm: '1.5em', md: '3em', lg: 'em'});
+  const mobileTopMargin = useBreakpointValue({ base: '8', sm: '8', md: '6', lg: '6'});
+  const mobileTextTopMargin = useBreakpointValue({ base: '1em', sm: '1em', md: '0.5em', lg: '0.5em'});
+  const mobileBottomMargin = useBreakpointValue({ base: '1em', sm: '1em', md: '3em', lg: '3em'});
+
   return (
-    <Stack alignItems="center" mt="3em" mb="3em">
+    <Stack alignItems="center" mt={mobileMargin} mb={mobileBottomMargin}>
       <Image
         src="gibbresh.png"
         fallbackSrc="https://via.placeholder.com/250"
@@ -15,11 +23,11 @@ const BioCards = ({ name, bio }: bioCardProps) => {
         borderRadius="full"
         w="70%"
       />
-      <Stack mt="6" spacing="3" gap={5}>
-        <Heading size='md' textAlign="center">
+      <Stack mt={mobileTopMargin} spacing="3" gap={mobileGap}>
+        <Heading size={headingFont} textAlign="center" mt={mobileTextTopMargin}>
           {name}
         </Heading>
-        <Text>{bio}</Text>
+        <Text fontSize={mobileBioFont} mt={mobileTextTopMargin}>{bio}</Text>
       </Stack>
     </Stack>
   );

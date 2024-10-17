@@ -1,23 +1,34 @@
-import { Box, Flex, Image, Square, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Square, Text, ResponsiveValue, useBreakpointValue } from "@chakra-ui/react";
 import BioCards from "../components/BioCards";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  // responsiveness
+  const mobileLayout = useBreakpointValue<ResponsiveValue<'row' | 'column' | 'row-reverse' | 'column-reverse'>>({ base:'column', sm: 'column', md: 'row', lg: 'row'});
+  const mobileHeaderWidth = useBreakpointValue({ base: '100%', sm: '100%', md: '50%', lg: '50%'});
+  const mobileImage = useBreakpointValue({ base: 'center', sm: 'center', md: 'none', lg: 'none'});
+  const mobilePadding = useBreakpointValue({ base: '2em', sm: '2em', md: 0, lg: 0});
+  const teamWidth = useBreakpointValue({ base: '90%', sm: '90%', md: '25%', lg: '25%'});
+  const teamLayout = useBreakpointValue({ base: 'center', sm: 'center', md: 'none', lg: 'none'});
+  const mobileMargin = useBreakpointValue({ base: 0, sm: 0, md: '3em', lg: '3em'});
+  const mobileLeftMargin = useBreakpointValue({ base: 0, sm: 0, md: '5em', lg: '5em'});
+  const mobileTopMargin = useBreakpointValue({ base: 0, sm: 0, md: '4em', lg: '4em'});
+  const mobileGeneralFont = useBreakpointValue({ base: '1.5em', sm: '1.5em', md: '1em', lg: '1em'});
+
   return (
     <Box>
-      <Flex direction="row" px="4em" pt="3em">
-        <Box boxSize="xl" ml="4em" w="50%">
+      <Box display='flex' flexDirection={mobileLayout} justifyContent={teamLayout} pt="3em" >
+        <Box boxSize="xl" display='flex' justifyContent={mobileImage} w={mobileHeaderWidth} ml={mobileLeftMargin} mt="1.5em" h='fit-content' mb='4em'>
           <Image
-            mt="1.5em"
-            h="480px"
-            w="550px"
+            h="400px"
+            w="500px"
             src="src/images/about-img.png"
             alt="test-lead-sample"
           />
         </Box>
-        <Box ml="6em" w="50%">
+        <Box w={mobileHeaderWidth} display='flex' flexDirection='column' alignItems={mobileImage} mx={mobileMargin} mt={'0.5em'}>
           <Text fontSize="3em">Cleveland Analytical Lab</Text>
-          <Text mt="1em" lineHeight="1.75em">
+          <Text mt={mobileTopMargin} lineHeight="1.75em" p={mobilePadding} fontSize={mobileGeneralFont}>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Leo accumsan
             lacinia euismod velit justo ante. Bibendum ac posuere ipsum torquent
             mus. Fames fames litora lacinia platea quam venenatis ante. Ex
@@ -28,13 +39,13 @@ const About = () => {
             finibus ultrices dictum accumsan magna.
           </Text>
         </Box>
-      </Flex>
-      <Flex direction="column" bg="transparent.thistle">
-        <Text fontSize="2em" textAlign="center" mt="1.5em">
+      </Box>
+      <Flex direction="column" bg="transparent.thistle" py='2em'>
+        <Text fontSize="2em" textAlign="center" mt="1em">
           Meet The Team
         </Text>
-        <Flex direction="row" justifyContent="center" gap={"3em"}>
-          <Box w="25%">
+        <Flex direction={mobileLayout} justifyContent="center" alignItems={teamLayout} gap={"3em"} mt='2em'>
+          <Box w={teamWidth}>
             <BioCards
               name={"Ozimba Anyangwe"}
               bio={
@@ -42,7 +53,7 @@ const About = () => {
               }
             />
           </Box>
-          <Box w="25%">
+          <Box w={teamWidth}>
             <BioCards
               name={"Dr. Michael Fricke"}
               bio={
@@ -50,7 +61,7 @@ const About = () => {
               }
             />
           </Box>
-          <Box w="25%">
+          <Box w={teamWidth}>
             <BioCards
               name={"Tyler Akbar"}
               bio={
@@ -66,6 +77,7 @@ const About = () => {
         gap="5em"
         color="white"
         justifyContent="center"
+        px='3em'
         py="3em"
         fontSize="2em"
       >
