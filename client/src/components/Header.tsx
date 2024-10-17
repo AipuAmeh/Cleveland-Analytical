@@ -1,33 +1,83 @@
-import { Box, Flex, Image, Spacer, Text } from "@chakra-ui/react";
+import {
+  AddIcon,
+  EditIcon,
+  ExternalLinkIcon,
+  HamburgerIcon,
+  RepeatIcon,
+} from "@chakra-ui/icons";
+import {
+  Box,
+  Flex,
+  IconButton,
+  Image,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Spacer,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  // header for mobile screens
+  const isMobile = useBreakpointValue({ base: true, md: false, sm: false });
+
   return (
-    <Flex alignItems="center" gap="2" minWidth="max-content" p={0}>
-      <Box p={3}> 
+    <Flex
+      alignItems="center"
+      gap="2"
+      minWidth="max-content"
+      p={0}
+      boxShadow="md"
+    >
+      <Box p={3}>
         {" "}
         <Link to={"/"}>
-        <Image     
-        boxSize='50px'
-        w='100%'
-        src='src/images/cleveland-analytical.jpeg'
-        alt='cleveland-analytical-logo'
-        >
-        </Image>      
+          <Image
+            boxSize="50px"
+            w="100%"
+            src="src/images/cleveland-analytical.jpeg"
+            alt="cleveland-analytical-logo"
+          ></Image>
         </Link>
-
       </Box>
       <Spacer gap={10} />
       <Box display="flex" justifyContent="flex-start" gap={20} mr={10}>
-        <Link to='/about'>
-        <Text>About</Text>
-        </Link>
-        <Link to='/contact-us'>
-        <Text>Contact Us</Text>
-        </Link>
-        <Link to='/forms'>
-        <Text>Forms</Text>
-        </Link>
+        {isMobile ? (
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              aria-label="Options"
+              icon={<HamburgerIcon />}
+              variant="outline"
+            />
+            <MenuList>
+              <MenuItem>
+                <Link to="/about">About</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/contact-us">Contact Us</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/forms">Forms</Link>
+              </MenuItem>
+            </MenuList>
+          </Menu>
+        ) : (
+          <>
+            <Link to="/about">
+              <Text>About</Text>
+            </Link>
+            <Link to="/contact-us">
+              <Text>Contact Us</Text>
+            </Link>
+            <Link to="/forms">
+              <Text>Forms</Text>
+            </Link>
+          </>
+        )}
       </Box>
     </Flex>
   );
