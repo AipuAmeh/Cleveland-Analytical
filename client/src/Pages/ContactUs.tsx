@@ -17,17 +17,14 @@ const ContactUs = () => {
       <Text fontSize="3em" textAlign={mobileText}>How Can We Help?</Text>
       <Flex direction={mobileLayout}>
         <Box w={mobileWidthText} mt='3em'>
-          <Text mt="4em" fontSize='lg' lineHeight='1.75em'>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Leo accumsan
-            lacinia euismod velit justo ante. Bibendum ac posuere ipsum torquent
-            mus. Fames fames litora lacinia platea quam venenatis ante.
+          <Text mt="4em" fontSize='md' lineHeight='1.75em'>
+            CLE Analytical aims to be a vital addition to Cleveland's resources for tackling lead contamination.
           </Text>
-          <Text mt="3em" fontSize='lg' lineHeight='1.75em'>
-            Ex natoque parturient faucibus erat iaculis. Ipsum euismod maximus
-            consequat interdum id aptent ultrices mollis litora. Dignissim sem
-            dapibus orci aenean viverra habitasse primis in. Efficitur velit
-            pretium taciti quam justo potenti? 
+          <Text mt="3em" fontSize='md' lineHeight='1.75em'>
+          Interested in learning more?
           </Text>
+          <br />
+          <Text fontSize='md'>Leave us a message.</Text>
           <Box mt='4em' textAlign={contactAlign}>
           <Text mt='2em' fontSize='1.75em' fontWeight='bold'>Contact Info</Text>
           <Text mt='0.5em'>

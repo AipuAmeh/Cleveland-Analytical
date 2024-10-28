@@ -1,5 +1,7 @@
 import { Box, Flex, Icon, Image, Text, useBreakpointValue, ResponsiveValue } from "@chakra-ui/react";
-import { WarningIcon} from '@chakra-ui/icons';
+import { LuMicroscope } from "react-icons/lu";
+import { FaShieldAlt } from "react-icons/fa";
+import { FaGear } from "react-icons/fa6";
 import Features from "../components/HomePageFeature";
 import GetInTouchForm from "../components/GetInTouchForm";
 
@@ -30,19 +32,19 @@ return (
             <Text textAlign='center' fontSize='2em'>What We Do</Text>
             <Flex gap='3em' px='4em' py={6} direction={whatWeDoMobile}>
           <Features 
-          icon={<Icon as={WarningIcon} boxSize={6} />}
-          title='Lorem Ipsum'
-          desc='Lorem ipsum odor amet, consectetuer adipiscing elit. Scelerisque tempor a sapien montes malesuada donec curabitur aenean.'
+        icon={<Icon fontSize="25px"> <LuMicroscope /> </Icon>}
+          title='Specialized Lead Analysis'
+          desc='Cleveland Analytical specializes in elemental analysis, with a focus on lead testing using advanced ICP-OES technology.'
           />
                     <Features 
-          icon={<Icon as={WarningIcon} boxSize={6} />}
-          title='Lorem Ipsum'
-          desc='Lorem ipsum odor amet, consectetuer adipiscing elit. Scelerisque tempor a sapien montes malesuada donec curabitur aenean.'
+          icon={<Icon fontSize="25px"> <FaShieldAlt /> </Icon>}
+          title='EPA Accreditation'
+          desc='The lab seeks accreditation from the EPA&lsquo;s NLLAP and will support Cleveland&lsquo;s 2019 Lead-safe Law.'
           />
                     <Features 
-          icon={<Icon as={WarningIcon} boxSize={6} />}
-          title='Lorem Ipsum'
-          desc='Lorem ipsum odor amet, consectetuer adipiscing elit. Scelerisque tempor a sapien montes malesuada donec curabitur aenean.'
+          icon={<Icon fontSize="25px"> <FaGear /> </Icon>}
+          title='State-of-the-Art Facility'
+          desc='CLE Analytical&lsquo;s lab includes state-of-the-art equipment to ensure compliance with regulatory standards and safe handling practices.'
           />
             </Flex>
         </Box>

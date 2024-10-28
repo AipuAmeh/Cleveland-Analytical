@@ -25,17 +25,13 @@ const GetInTouchForm = () => {
   </Text>
   <Box px="4em"  mt={mobileSectionMargin} >
   <Text fontSize='lg' lineHeight='1.75em'>
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Scelerisque
-          tempor a sapien montes malesuada donec curabitur aenean. Per penatibus
-          accumsan eget ridiculus elementum interdum nisl morbi quam. Vel ligula
-          velit ac;
+  CLE Analytical aims to be a vital addition to Cleveland's resources for tackling lead contamination.
         </Text>
         <Text mt="3em" fontSize='lg' lineHeight='1.75em'>
-          netus nisl iaculis. Faucibus fusce nisi varius bibendum lacinia
-          vulputate egestas. Litora felis leo habitant at vitae natoque. Nisl
-          quis semper lacinia vestibulum felis elit, vitae fusce class. Quis
-          placerat dapibus mus dolor consectetur torquent facilisi consectetur
-          tortor. Eu velit molestie tristique finibus donec dictum donec.
+        Interested in learning more?
+        </Text>
+        <Text mt="3em" fontSize='lg' lineHeight='1.75em'>
+        Leave us a message.
         </Text>
   </Box>
 

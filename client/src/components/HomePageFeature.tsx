@@ -17,7 +17,7 @@ const Features = ({ title, desc, icon, ...rest }: featureProps) => {
       textAlign='center'
     >
       {icon}
-      <Heading fontSize="1.5em" pt={2} mt={2}>
+      <Heading fontSize="1.4em" pt={2} mt={2}>
         {title}
       </Heading>
       <Text mt={3}>{desc}</Text>
