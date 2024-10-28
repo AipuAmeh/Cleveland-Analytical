@@ -47,4 +47,31 @@
   }
 
 /* component styling */
+.about-pg-cards {
+  background-color: #70587C;
+}
 
+.about-pg-cards:hover {
+  background-color: #C8B8DB;
+  color: black;
+  animation: jiggle 0.5s ease infinite;
+}
+
+
+@keyframes jiggle {
+  0% {
+      transform: rotate(0deg); /* Start at the original position */
+  }
+  25% {
+      transform: rotate(5deg); /* Rotate slightly to the right */
+  }
+  50% {
+      transform: rotate(-5deg); /* Rotate slightly to the left */
+  }
+  75% {
+      transform: rotate(3deg); /* Rotate back to the right */
+  }
+  100% {
+      transform: rotate(0deg); /* Return to original position */
+  }
+}

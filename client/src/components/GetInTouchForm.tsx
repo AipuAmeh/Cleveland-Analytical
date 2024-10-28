@@ -24,13 +24,13 @@ const GetInTouchForm = () => {
     Get In Touch With Us
   </Text>
   <Box px="4em"  mt={mobileSectionMargin} >
-  <Text fontSize='lg' lineHeight='1.75em'>
+  <Text fontSize='md' lineHeight='1.75em'>
   CLE Analytical aims to be a vital addition to Cleveland's resources for tackling lead contamination.
         </Text>
-        <Text mt="3em" fontSize='lg' lineHeight='1.75em'>
+        <Text mt="3em" fontSize='md' lineHeight='1.75em'>
         Interested in learning more?
         </Text>
-        <Text mt="3em" fontSize='lg' lineHeight='1.75em'>
+        <Text mt="3em" fontSize='md' lineHeight='1.75em'>
         Leave us a message.
         </Text>
   </Box>

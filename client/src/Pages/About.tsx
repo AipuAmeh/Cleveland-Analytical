@@ -192,6 +192,7 @@ The lab is currently pursuing accreditation from the US EPA's National Lead Labo
       >
         <Link to={"#"}>
           <Square
+            className="about-pg-cards"
             size="250px"
             bg="brand.chineseViolet"
             shadow="lg"
@@ -202,8 +203,9 @@ The lab is currently pursuing accreditation from the US EPA's National Lead Labo
         </Link>
         <Link to={"#"}>
           <Square
+            className="about-pg-cards"
             size="250px"
-            bg="brand.chineseViolet"
+            // bg="brand.chineseViolet"
             shadow="lg"
             fontWeight="bold"
           >
