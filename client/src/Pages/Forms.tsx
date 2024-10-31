@@ -5,6 +5,7 @@ const Forms = () => {
 return (
     <Box>
              <Box position="relative" display="inline-block">
+                
             <Image
             boxSize='650px'
             w='100%'  
