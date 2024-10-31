@@ -38,7 +38,7 @@ const GetInTouchForm = () => {
   const [company, setCompany] = useState("");
   const [phone, setPhone] = useState("");
 
-  const handleFormSubmit = async (e) => {
+  const handleFormSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     // form error handling/validation
     if (

@@ -1,4 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react";
+import GetInTouchForm from "../components/GetInTouchForm";
 
 const Forms = () => {
 return (
@@ -23,14 +24,14 @@ return (
     </Box>
     <Box p='6em'>
     <Image
-w='378px'
-h='297px'
+w='300px'
+h='260px'
 src='src/images/plain-lead.png'>
 
   </Image>
-          <Text mt='0.5em' fontSize='1.7em'>Lead Chain of Custody</Text>
+          <Text mt='1em' fontSize='1.5em'>Lead Chain of Custody</Text>
     </Box>
-
+< GetInTouchForm />
     </Box>
 )
 

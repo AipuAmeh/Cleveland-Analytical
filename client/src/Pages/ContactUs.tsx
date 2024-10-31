@@ -1,5 +1,6 @@
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
-import { Box, Button, Flex, FormControl, FormHelperText, Input, Text, Textarea, useBreakpointValue, ResponsiveValue } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, FormHelperText, Input, Text, Textarea, useBreakpointValue, ResponsiveValue,  } from "@chakra-ui/react";
+// import { useState } from "react";
 
 const ContactUs = () => {
 
@@ -11,6 +12,15 @@ const ContactUs = () => {
   const formMobileMargin = useBreakpointValue({ base: '0', sm: '0', md:' 3em', lg: '3em'});
   const contactAlign = useBreakpointValue<ResponsiveValue<'center' | 'left' | 'right'>>({ base: 'center', sm: 'center', md: 'left', lg: 'left' });
   const buttonAlign = useBreakpointValue<ResponsiveValue<'center' | 'left' | 'right'>>({ base: 'center', sm: 'center', md: 'left', lg: 'left' });
+
+  // add contact functionality here also
+
+  // const toast = useToast();
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
+  // const [company, setCompany] = useState("");
+  // const [phone, setPhone] = useState("");
 
   return (
     <Box p="5em" >
