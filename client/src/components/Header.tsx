@@ -1,9 +1,5 @@
 import {
-  AddIcon,
-  EditIcon,
-  ExternalLinkIcon,
   HamburgerIcon,
-  RepeatIcon,
 } from "@chakra-ui/icons";
 import {
   Box,
@@ -26,6 +22,7 @@ const Header = () => {
 
   return (
     <Flex
+      className= 'header'
       alignItems="center"
       gap="2"
       minWidth="max-content"

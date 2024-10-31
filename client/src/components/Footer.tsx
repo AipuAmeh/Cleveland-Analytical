@@ -1,4 +1,5 @@
 import { Box, Divider, Flex, Spacer, Text} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -6,6 +7,10 @@ const Footer = () => {
     <Box display="flex" flexDirection="row" p={4} justifyContent='space-between'>
       <Box px='3em'>
         <Text fontSize='1.2em' fontWeight='bold'>Lab Services</Text>
+        <Link to='/forms'>
+        <Text mt='0.5em' >Lead Chain of Custody</Text>
+        </Link>
+
       </Box>
       <Box>
         <Text fontSize='1.2em' fontWeight='bold'>Contact Us</Text>

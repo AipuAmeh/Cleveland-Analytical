@@ -33,20 +33,20 @@ const GetInTouchForm = () => {
 
   const toast = useToast();
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleFormSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     // form error handling/validation
     if (
-      name === "" ||
+      name === "" || 
+      company === "" ||
       email === "" ||
-      message === "" ||
       phone === "" ||
-      company === ""
+      message === ""
     ) {
       toast({
         title: "Error",
@@ -67,13 +67,11 @@ const GetInTouchForm = () => {
       });
       return;
     }
-    console.log(isInvalidEmail);
-    console.log("DETAILS:", name, phone, company, message, email);
-    if (name && email && message && company && phone) {
+    if (name && company && email && phone && message) {
       const templateId = "template_edjxtco";
       const serviceId = "service_v8gg88i";
       const publicKey = "Z2w0bi6iIZ5aC0ixP";
-      const templateParams = { name, email, company, phone, message };
+      const templateParams = { name, company, email, phone, message };
       await emailjs.send(serviceId, templateId, templateParams, publicKey).then(
         (result) => {
           return result;
