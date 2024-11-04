@@ -28,6 +28,7 @@ const Header = () => {
       minWidth="max-content"
       p={0}
       boxShadow="md"
+      color='black'
     >
       <Box p={3}>
         {" "}

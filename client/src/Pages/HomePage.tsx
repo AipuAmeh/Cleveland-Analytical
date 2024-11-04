@@ -1,33 +1,16 @@
-import { Box, Flex, Icon, Image, Text, useBreakpointValue, ResponsiveValue } from "@chakra-ui/react";
+import { Box, Flex, Icon, Text, useBreakpointValue, ResponsiveValue } from "@chakra-ui/react";
 import { LuMicroscope } from "react-icons/lu";
 import { FaShieldAlt } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 import Features from "../components/HomePageFeature";
 import GetInTouchForm from "../components/GetInTouchForm";
+import HeroSection from "../components/HomePageHero";
 
 const HomePage = () => {
-    const mobileSiteName = useBreakpointValue({ base: '2em', sm: '2em', md: '3em', lg: '3em'});
     const whatWeDoMobile = useBreakpointValue<ResponsiveValue<'row' | 'column' | 'row-reverse' | 'column-reverse'>>({ base: 'column', sm: 'column', md: 'row', lg: 'row'});
 return (
     <Box> 
-        <Box position="relative" display='flex' id='hero-section'>
-            <Image
-            boxSize='650px'
-            w='100%'  
-            src='src/images/screenshot.png'
-            alt='lead-sample-hero-image'
-            />
-            <Box display='flex' justifyContent='flex-end' alignItems='center'>
-            <Text
-                     position="absolute"
-                     top="30%"
-                     color="brand.black"
-                     fontSize="3em"
-                     fontWeight="bold"
-                     mr={mobileSiteName}
-              >Cleveland <br /> Analytical</Text>
-            </Box>
-        </Box>
+      <HeroSection />
         <Box py='3em'>
             <Text textAlign='center' fontSize='2em'>What We Do</Text>
             <Flex gap='3em' px='4em' py={6} direction={whatWeDoMobile}>
