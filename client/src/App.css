@@ -137,7 +137,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: rgba(93, 58, 97, 0.5); /* Semi-transparent overlay */
+  background-color: rgba(169, 139, 173, 0.5); /* Semi-transparent overlay */
   text-align: center;
   z-index: 5; /* Ensure overlay appears below the header */
 }
