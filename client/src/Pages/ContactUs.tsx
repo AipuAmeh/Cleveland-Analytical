@@ -15,6 +15,7 @@ import {
 import { useState } from "react";
 import { isInvalidEmail } from "../utils/EmailValidation";
 import emailjs from "@emailjs/browser";
+import Header from "../components/Header";
 
 const ContactUs = () => {
   //breakpoints for mobile screens
@@ -119,7 +120,8 @@ const ContactUs = () => {
 
   return (
     <Box p="5em">
-      <Text fontSize="3em" textAlign={mobileText}>
+      <Header />
+      <Text fontSize="3em" mt="0.5em" textAlign={mobileText}>
         How Can We Help?
       </Text>
       <Flex direction={mobileLayout}>

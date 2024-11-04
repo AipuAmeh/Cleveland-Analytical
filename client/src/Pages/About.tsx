@@ -38,8 +38,8 @@ const About = () => {
     base: "1em",
     sm: "1em",
     md: 0,
-    lg: 0, 
-  })
+    lg: 0,
+  });
   const teamWidth = useBreakpointValue({
     base: "90%",
     sm: "90%",
@@ -79,9 +79,9 @@ const About = () => {
 
   return (
     <Box>
-      {/* <Header /> */}
+      <Header />
       <Box
-        // mt='3em'
+        mt="3em"
         display="flex"
         flexDirection={mobileLayout}
         justifyContent={teamLayout}
@@ -111,7 +111,7 @@ const About = () => {
           alignItems={mobileImage}
           mx={mobileMargin}
           mt={"0.5em"}
-          mb='2.5em'
+          mb="2.5em"
         >
           <Text fontSize="3em">Cleveland Analytical Lab</Text>
           <Text
@@ -121,28 +121,44 @@ const About = () => {
             py={mobileYPadding}
             fontSize={mobileGeneralFont}
           >
-     Cleveland Analytical LLC (CLE Analytical) is a start-up based in Cleveland, OH, specializing in analytical chemistry services, particularly in elemental analysis. Located at 7100 Euclid Ave, the laboratory is equipped with the Agilent 5800 Inductively Coupled Plasma – Optical Emission Spectrometer (ICP-OES).
+            Cleveland Analytical LLC (CLE Analytical) is a start-up based in
+            Cleveland, OH, specializing in analytical chemistry services,
+            particularly in elemental analysis. Located at 7100 Euclid Ave, the
+            laboratory is equipped with the Agilent 5800 Inductively Coupled
+            Plasma – Optical Emission Spectrometer (ICP-OES).
           </Text>
 
           <br />
 
-          <Text       
-          lineHeight="1.75em"
+          <Text
+            lineHeight="1.75em"
             px={mobilePadding}
             py={mobileYPadding}
-            fontSize={mobileGeneralFont}>
-The lab is currently pursuing accreditation from the US EPA's National Lead Laboratory Accreditation Program (NLLAP) and will soon begin accepting samples for analysis. Its primary source of samples will be the City of Cleveland, which enacted a Lead-safe law in 2019 requiring rental properties built before 1978 to be certified as lead-safe. This initiative addresses the concerning issue of lead poisoning, with over 200 severe cases reported in children each year.
+            fontSize={mobileGeneralFont}
+          >
+            The lab is currently pursuing accreditation from the US EPA's
+            National Lead Laboratory Accreditation Program (NLLAP) and will soon
+            begin accepting samples for analysis. Its primary source of samples
+            will be the City of Cleveland, which enacted a Lead-safe law in 2019
+            requiring rental properties built before 1978 to be certified as
+            lead-safe. This initiative addresses the concerning issue of lead
+            poisoning, with over 200 severe cases reported in children each
+            year.
           </Text>
 
           <br />
 
-          <Text        
-          lineHeight="1.75em"
+          <Text
+            lineHeight="1.75em"
             px={mobilePadding}
             py={mobileYPadding}
-            fontSize={mobileGeneralFont}>
-  CLE Analytical’s facility is designed to meet high standards, featuring advanced equipment, including a qualified ICP-OES, laboratory exhaust hoods, and sample preparation areas. The lab will implement a quality and sample management system to ensure compliance with all regulatory authorities.
-            
+            fontSize={mobileGeneralFont}
+          >
+            CLE Analytical’s facility is designed to meet high standards,
+            featuring advanced equipment, including a qualified ICP-OES,
+            laboratory exhaust hoods, and sample preparation areas. The lab will
+            implement a quality and sample management system to ensure
+            compliance with all regulatory authorities.
           </Text>
         </Box>
       </Box>

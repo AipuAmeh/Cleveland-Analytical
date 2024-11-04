@@ -1,4 +1,4 @@
-import { Box, Flex, Icon, Image, Text, useBreakpointValue, ResponsiveValue } from "@chakra-ui/react";
+import { Box, Flex, Icon, Text, useBreakpointValue, ResponsiveValue } from "@chakra-ui/react";
 import { LuMicroscope } from "react-icons/lu";
 import { FaShieldAlt } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
@@ -7,7 +7,6 @@ import GetInTouchForm from "../components/GetInTouchForm";
 import HeroSection from "../components/HomePageHero";
 
 const HomePage = () => {
-    const mobileSiteName = useBreakpointValue({ base: '2em', sm: '2em', md: '3em', lg: '3em'});
     const whatWeDoMobile = useBreakpointValue<ResponsiveValue<'row' | 'column' | 'row-reverse' | 'column-reverse'>>({ base: 'column', sm: 'column', md: 'row', lg: 'row'});
 return (
     <Box> 
