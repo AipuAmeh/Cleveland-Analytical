@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import BioCards from "../components/BioCards";
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
 
 const About = () => {
   // responsiveness
@@ -78,7 +79,9 @@ const About = () => {
 
   return (
     <Box>
+      {/* <Header /> */}
       <Box
+        // mt='3em'
         display="flex"
         flexDirection={mobileLayout}
         justifyContent={teamLayout}
