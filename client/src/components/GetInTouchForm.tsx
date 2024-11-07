@@ -27,8 +27,8 @@ const GetInTouchForm = () => {
   const mobileSectionMargin = useBreakpointValue({
     base: "3em",
     sm: "3em",
-    md: "6em",
-    lg: "6em",
+    md: "8em",
+    lg: "8em",
   });
 
   const toast = useToast();
@@ -101,19 +101,16 @@ const GetInTouchForm = () => {
     <Box bg="transparent.thistle">
       <Box display="flex" id="get-in-touch" flexDirection={mobileFormLayout}>
         <Box w={mobileFormWidth}>
-          <Text fontSize="2em" pt="1.5em" pl="2em">
+          <Text fontSize="2em" mt="2.5em" pl="2em">
             Get In Touch With Us
           </Text>
           <Box px="4em" mt={mobileSectionMargin}>
-            <Text fontSize="lg" lineHeight="1.75em">
+            <Text fontSize="1.3em" lineHeight="1.75em">
               CLE Analytical aims to be a vital addition to Cleveland's
               resources for tackling lead contamination.
             </Text>
-            <Text mt="3em" fontSize="lg" lineHeight="1.75em">
-              Interested in learning more?
-            </Text>
-            <Text mt="3em" fontSize="lg" lineHeight="1.75em">
-              Leave us a message!
+            <Text mt="3em" fontSize="1.3em" lineHeight="1.75em">
+              Connect with us today to learn more!
             </Text>
           </Box>
         </Box>

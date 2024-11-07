@@ -12,10 +12,10 @@ const HeroSection = () => {
   return (
     <Box className="hero-container">
       <Header />
-      <img src="src/images/screenshot.png" alt="Hero" className="hero-image" />
+      <img src="src/images/cle-lab-photo.png" alt="Hero" className="hero-image" />
       <Box className="overlay" display="flex" alignItems="flex-end">
-        <Text className="logo" mr={mobileSiteName}>
-          Cleveland <br /> Analytical
+        <Text className="logo" fontSize='4em' mr={mobileSiteName} color='brand.purple'>
+          CLEVELAND <br /> ANALYTICAL
         </Text>
       </Box>
     </Box>

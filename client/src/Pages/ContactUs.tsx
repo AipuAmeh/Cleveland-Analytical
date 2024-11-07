@@ -121,7 +121,7 @@ const ContactUs = () => {
   return (
     <Box p="5em">
       <Header />
-      <Text fontSize="3em" mt="0.5em" textAlign={mobileText}>
+      <Text fontSize="3em" mt="1em" textAlign={mobileText}>
         How Can We Help?
       </Text>
       <Flex direction={mobileLayout}>
@@ -134,7 +134,7 @@ const ContactUs = () => {
             Interested in learning more?
           </Text>
           <br />
-          <Text fontSize="md">Leave us a message.</Text>
+          <Text fontSize="md">Connect with us today!</Text>
           <Box mt="4em" textAlign={contactAlign}>
             <Text mt="2em" fontSize="1.75em" fontWeight="bold">
               Contact Info

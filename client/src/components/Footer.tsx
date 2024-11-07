@@ -25,7 +25,7 @@ const Footer = () => {
     <Divider borderColor='brand.snow' borderWidth='1px' />
     <Box display='flex' alignItems='center' border='white.500' p={4}>
  
-<Text>Cleveland Analytical</Text>
+<Text>CLE Analytical</Text>
 <Spacer />
 <Text> &copy;2024 ABA Creations{" "}</Text>
     </Box>
