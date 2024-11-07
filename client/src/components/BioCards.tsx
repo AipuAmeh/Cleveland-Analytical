@@ -3,9 +3,10 @@ import { Heading, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/reac
 type bioCardProps = {
   name: string;
   bio: string;
+  image: string;
 };
 
-const BioCards = ({ name, bio }: bioCardProps) => {
+const BioCards = ({ name, bio, image }: bioCardProps) => {
   const mobileBioFont = useBreakpointValue({ base: '1.5em', sm: '1.5em', md: '1em', lg: '1em'});
   const headingFont = useBreakpointValue({ base: 'xl', sm: 'xl', md: 'md', lg: 'md'});
   const mobileGap = useBreakpointValue({ base: 4, sm: 4, md: 5, lg: 5});
@@ -17,11 +18,11 @@ const BioCards = ({ name, bio }: bioCardProps) => {
   return (
     <Stack alignItems="center" mt={mobileMargin} mb={mobileBottomMargin}>
       <Image
-        src="gibbresh.png"
+        src={image}
         fallbackSrc="https://via.placeholder.com/250"
         alt="headshots"
         borderRadius="full"
-        w="70%"
+        w="80%"
       />
       <Stack mt={mobileTopMargin} spacing="3" gap={mobileGap}>
         <Heading size={headingFont} textAlign="center" mt={mobileTextTopMargin}>
