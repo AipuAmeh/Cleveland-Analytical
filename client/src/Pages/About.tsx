@@ -81,7 +81,7 @@ const About = () => {
     <Box>
       <Header />
       <Box
-        mt="3em"
+        mt="5em"
         display="flex"
         flexDirection={mobileLayout}
         justifyContent={teamLayout}

@@ -12,9 +12,9 @@ const HeroSection = () => {
   return (
     <Box className="hero-container">
       <Header />
-      <img src="src/images/test-tubes.png" alt="Hero" className="hero-image" />
+      <img src="src/images/cle-lab-photo.png" alt="Hero" className="hero-image" />
       <Box className="overlay" display="flex" alignItems="flex-end">
-        <Text className="logo" mr={mobileSiteName}>
+        <Text className="logo" mr={mobileSiteName} color='brand.purple'>
          Forms
         </Text>
       </Box>
