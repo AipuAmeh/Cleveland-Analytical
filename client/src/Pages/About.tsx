@@ -212,22 +212,20 @@ const About = () => {
         py="3em"
         fontSize="2em"
       >
-        <Link to={"#"}>
+        <Link to={"/forms"}>
           <Square
             className="about-pg-cards"
             size="250px"
-            bg="brand.chineseViolet"
             shadow="lg"
             fontWeight="bold"
           >
             Forms
           </Square>
         </Link>
-        <Link to={"#"}>
+        <Link to={"/contact-us"}>
           <Square
             className="about-pg-cards"
             size="250px"
-            // bg="brand.chineseViolet"
             shadow="lg"
             fontWeight="bold"
           >
