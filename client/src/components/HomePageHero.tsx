@@ -1,24 +1,33 @@
-import { Box, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Text, useBreakpointValue, ResponsiveValue } from "@chakra-ui/react";
 import HeaderForHero from "./HeaderForHero";
 
 // work on margin for mobile
 const HeroSection = () => {
   const mobileSiteName = useBreakpointValue({
-    base: "2em",
-    sm: "2em",
-    md: "3em",
-    lg: "3em",
+    base: "0em",
+    sm: "0em",
+    md: "2em",
+    lg: "2em",
   });
+  const mobileSlogan = useBreakpointValue({
+    base: "0em",
+    sm: "0em",
+    md: "4em",
+    lg: "4em",
+  });
+  const mobileLayout = useBreakpointValue<
+  ResponsiveValue<"center" | "left" | "right">
+>({ base: "center", sm: "center", md: "left", lg: "left" });
 
   return (
     <Box className="hero-container">
       <HeaderForHero />
       <img src="src/images/cle-lab-photo.png" alt="Hero" className="hero-image" />
-      <Box className="overlay" display='flex' alignItems='flex-end' >
-        <Text  fontSize='3em' className="logo" mr='2em'>
+      <Box className="overlay" display='flex' alignItems={mobileLayout} >
+        <Text  fontSize='3em' className="logo" mr={mobileSiteName}>
           Cleveland <br /> Analytical
         </Text>
-        <Text fontSize='1.5em' mr='4em' >Empowering a Lead-Safe Future for Cleveland.</Text>
+        <Text fontSize='1.5em' mr={mobileSlogan} >Empowering a Lead-Safe Future for Cleveland.</Text>
 
       </Box>
     </Box>

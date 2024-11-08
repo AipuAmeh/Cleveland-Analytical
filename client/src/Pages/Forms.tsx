@@ -4,26 +4,22 @@ import LeadFormHero from "../components/LeadFormHero";
 import { GrNotes } from "react-icons/gr";
 
 const Forms = () => {
-return (
+  return (
     <Box>
-    <LeadFormHero />
-    <Box ml='4em' py='3em'>
-<Square
-className="form-card"
-size="200px"
-shadow="lg"
->
-    <Icon boxSize='12em' display='flex' ml='4em' mt='4.2em' >
-    <GrNotes />
-    </Icon>
-
-</Square>
-          <Text mt='1em' fontSize='1.3em'>Lead Chain of Custody</Text>
+      <LeadFormHero />
+      <Box ml="4em" py="3em">
+        <Square className="form-card" size="200px" shadow="lg">
+          <Icon boxSize="12em" display="flex" ml="4em" mt="4.2em">
+            <GrNotes />
+          </Icon>
+        </Square>
+        <Text mt="1em" fontSize="1.3em">
+          Lead Chain of Custody
+        </Text>
+      </Box>
+      <GetInTouchForm />
     </Box>
-< GetInTouchForm />
-    </Box>
-)
-
-}
+  );
+};
 
 export default Forms;

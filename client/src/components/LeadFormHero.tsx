@@ -8,6 +8,7 @@ const HeroSection = () => {
     md: "3em",
     lg: "3em",
   });
+  
 
   return (
     <Box className="hero-container">

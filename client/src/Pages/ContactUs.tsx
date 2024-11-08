@@ -119,8 +119,9 @@ const ContactUs = () => {
   };
 
   return (
-    <Box p="5em">
+    <Box>
       <Header />
+      <Box px='5em'>
       <Text fontSize="3em" mt="1em" textAlign={mobileText}>
         How Can We Help?
       </Text>
@@ -223,7 +224,8 @@ const ContactUs = () => {
           </FormControl>
         </Box>
       </Flex>
-      <Box></Box>
+      </Box>
+
     </Box>
   );
 };

@@ -52,13 +52,13 @@ import {
                 variant="outline"
               />
               <MenuList>
-                <MenuItem>
+                <MenuItem  color='black'>
                   <Link to="/about">About</Link>
                 </MenuItem>
-                <MenuItem>
+                <MenuItem  color='black'>
                   <Link to="/contact-us">Contact Us</Link>
                 </MenuItem>
-                <MenuItem>
+                <MenuItem  color='black'>
                   <Link to="/forms">Forms</Link>
                 </MenuItem>
               </MenuList>

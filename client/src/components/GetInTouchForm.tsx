@@ -14,6 +14,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { isInvalidEmail } from "../utils/EmailValidation";
 
+
 const GetInTouchForm = () => {
   const mobileFormLayout = useBreakpointValue<
     ResponsiveValue<"row" | "column" | "row-reverse" | "column-reverse">
@@ -29,6 +30,12 @@ const GetInTouchForm = () => {
     sm: "3em",
     md: "8em",
     lg: "8em",
+  });
+  const formPadding = useBreakpointValue({
+    base: '3.5em',
+    sm: '3.5em',
+    md: '5em',
+    lg: '5em'
   });
 
   const toast = useToast();
@@ -114,7 +121,7 @@ const GetInTouchForm = () => {
             </Text>
           </Box>
         </Box>
-        <Box w={mobileFormWidth} mt="5em" px="5em">
+        <Box w={mobileFormWidth} mt="5em" px={formPadding}>
           <FormControl bg="brand.thistle" p="3em" mb="5em" shadow="md">
             <Input
               placeholder="Name"
