@@ -1,5 +1,5 @@
-import Header from "./Header";
 import { Box, Text, useBreakpointValue } from "@chakra-ui/react";
+import HeaderForHero from "./HeaderForHero";
 
 const HeroSection = () => {
   const mobileSiteName = useBreakpointValue({
@@ -11,10 +11,10 @@ const HeroSection = () => {
 
   return (
     <Box className="hero-container">
-      <Header />
+      <HeaderForHero />
       <img src="src/images/cle-lab-photo.png" alt="Hero" className="hero-image" />
       <Box className="overlay" display="flex" alignItems="flex-end">
-        <Text className="logo" mr={mobileSiteName} color='brand.purple'>
+        <Text className="logo" mr={mobileSiteName} color='brand.snow'>
          Forms
         </Text>
       </Box>

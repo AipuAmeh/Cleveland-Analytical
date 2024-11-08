@@ -101,7 +101,7 @@ const GetInTouchForm = () => {
     <Box bg="transparent.thistle">
       <Box display="flex" id="get-in-touch" flexDirection={mobileFormLayout}>
         <Box w={mobileFormWidth}>
-          <Text fontSize="2em" mt="2.5em" pl="2em">
+          <Text fontSize="2em" mt="2em" pl="2em">
             Get In Touch With Us
           </Text>
           <Box px="4em" mt={mobileSectionMargin}>
