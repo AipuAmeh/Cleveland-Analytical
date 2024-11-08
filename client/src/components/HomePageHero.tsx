@@ -15,7 +15,7 @@ const HeroSection = () => {
       <img src="src/images/cle-lab-photo.png" alt="Hero" className="hero-image" />
       <Box className="overlay" display="flex" alignItems="flex-end">
         <Text className="logo" fontSize='4em' mr={mobileSiteName} color='brand.purple'>
-          CLEVELAND <br /> ANALYTICAL
+          CLE Analytical
         </Text>
       </Box>
     </Box>
