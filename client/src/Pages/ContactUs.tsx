@@ -11,11 +11,13 @@ import {
   useBreakpointValue,
   ResponsiveValue,
   useToast,
+  Icon,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { isInvalidEmail } from "../utils/EmailValidation";
 import emailjs from "@emailjs/browser";
 import Header from "../components/Header";
+import { FaFax } from "react-icons/fa";
 
 const ContactUs = () => {
   //breakpoints for mobile screens
@@ -119,111 +121,118 @@ const ContactUs = () => {
   };
 
   return (
-    <Box p="5em">
+    <Box mb="3em">
       <Header />
-      <Text fontSize="3em" mt="1em" textAlign={mobileText}>
-        How Can We Help?
-      </Text>
-      <Flex direction={mobileLayout}>
-        <Box w={mobileWidthText} mt="3em">
-          <Text mt="4em" fontSize="md" lineHeight="1.75em">
-            CLE Analytical aims to be a vital addition to Cleveland's resources
-            for tackling lead contamination.
-          </Text>
-          <Text mt="3em" fontSize="md" lineHeight="1.75em">
-            Interested in learning more?
-          </Text>
-          <br />
-          <Text fontSize="md">Connect with us today!</Text>
-          <Box mt="4em" textAlign={contactAlign}>
-            <Text mt="2em" fontSize="1.75em" fontWeight="bold">
-              Contact Info
+      <Box px="5em">
+        <Text fontSize="3em" mt="1em" textAlign={mobileText}>
+          How Can We Help?
+        </Text>
+        <Flex direction={mobileLayout}>
+          <Box w={mobileWidthText} mt="3em">
+            <Text mt="4em" fontSize="md" lineHeight="1.75em">
+              CLE Analytical aims to be a vital addition to Cleveland's
+              resources for tackling lead contamination.
             </Text>
-            <Text mt="0.5em">
-              <EmailIcon boxSize={5} mr="0.5em" /> info@clevelandanalytics.com
+            <Text mt="3em" fontSize="md" lineHeight="1.75em">
+              Interested in learning more?
             </Text>
-            <Text mt="1em">
-              <PhoneIcon boxSize={5} mr="0.5em" /> (123) 456 - 7890
-            </Text>
-          </Box>
-        </Box>
-        <Box w={mobileWidthForm} ml={formMobileMargin} mt="3em">
-          <Text mt="2em" fontSize="1em" fontWeight="bold">
-            We want to hear from you!
-          </Text>
-          <FormControl mt="1em">
-            <Input
-              placeholder="Name"
-              type="text"
-              variant="filled"
-              size="lg"
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
-            />
-
-            <Input
-              placeholder="Company"
-              type="text"
-              mt="1.5em"
-              variant="filled"
-              size="lg"
-              value={company}
-              onChange={(e) => {
-                setCompany(e.target.value);
-              }}
-            />
-
-            <Input
-              placeholder="Email Address"
-              type="email"
-              mt="1.5em"
-              variant="filled"
-              size="lg"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
-            <FormHelperText>We'll never share your email.</FormHelperText>
-
-            <Input
-              placeholder="Phone"
-              type="text"
-              mt="1.5em"
-              variant="filled"
-              size="lg"
-              value={phone}
-              onChange={(e) => {
-                setPhone(e.target.value);
-              }}
-            />
-
-            <Textarea
-              placeholder="Additional Information"
-              mt="1.5em"
-              variant="filled"
-              size="lg"
-              value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-            />
-            <Box mt="1.5em" display="flex" justifyContent={buttonAlign}>
-              <Button
-                bg="brand.chineseViolet"
-                color="white"
-                size="lg"
-                onClick={handleFormSubmit}
-              >
-                Submit
-              </Button>
+            <br />
+            <Text fontSize="md">Connect with us today!</Text>
+            <Box mt="4em" textAlign={contactAlign}>
+              <Text mt="2em" fontSize="1.75em" fontWeight="bold">
+                Contact Info
+              </Text>
+              <Text mt="0.5em">
+                <EmailIcon boxSize={5} mr="0.5em" /> info@clevelandanalytics.com
+              </Text>
+              <Text mt="1em">
+                <PhoneIcon boxSize={5} mr="0.5em" /> (216) 785-9043
+              </Text>
+              <Text mt="1em">
+                <Icon boxSize={7}  lineHeight='40px' >
+                  <FaFax />
+                </Icon>{" "}
+                (216) 785-9197
+              </Text>
             </Box>
-          </FormControl>
-        </Box>
-      </Flex>
-      <Box></Box>
+          </Box>
+          <Box w={mobileWidthForm} ml={formMobileMargin} mt="3em">
+            <Text mt="2em" fontSize="1em" fontWeight="bold">
+              We want to hear from you!
+            </Text>
+            <FormControl mt="1em">
+              <Input
+                placeholder="Name"
+                type="text"
+                variant="filled"
+                size="lg"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
+
+              <Input
+                placeholder="Company"
+                type="text"
+                mt="1.5em"
+                variant="filled"
+                size="lg"
+                value={company}
+                onChange={(e) => {
+                  setCompany(e.target.value);
+                }}
+              />
+
+              <Input
+                placeholder="Email Address"
+                type="email"
+                mt="1.5em"
+                variant="filled"
+                size="lg"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+              <FormHelperText>We'll never share your email.</FormHelperText>
+
+              <Input
+                placeholder="Phone"
+                type="text"
+                mt="1.5em"
+                variant="filled"
+                size="lg"
+                value={phone}
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                }}
+              />
+
+              <Textarea
+                placeholder="Additional Information"
+                mt="1.5em"
+                variant="filled"
+                size="lg"
+                value={message}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+              />
+              <Box mt="1.5em" display="flex" justifyContent={buttonAlign}>
+                <Button
+                  bg="brand.chineseViolet"
+                  color="white"
+                  size="lg"
+                  onClick={handleFormSubmit}
+                >
+                  Submit
+                </Button>
+              </Box>
+            </FormControl>
+          </Box>
+        </Flex>
+      </Box>
     </Box>
   );
 };

@@ -6,6 +6,8 @@ import Features from "../components/HomePageFeature";
 import GetInTouchForm from "../components/GetInTouchForm";
 import HeroSection from "../components/HomePageHero";
 
+// title on homepage needs to be formatted correctly 
+// come back to it
 const HomePage = () => {
     const whatWeDoMobile = useBreakpointValue<ResponsiveValue<'row' | 'column' | 'row-reverse' | 'column-reverse'>>({ base: 'column', sm: 'column', md: 'row', lg: 'row'});
 return (

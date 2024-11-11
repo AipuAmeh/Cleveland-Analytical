@@ -6,12 +6,6 @@
   width: fit-content;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -103,6 +97,19 @@
 }
 
 .header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  z-index: 10; /* Ensure header appears above the image */
+}
+
+.header-with-hero {
   position: absolute;
   top: 0;
   left: 0;
@@ -118,7 +125,7 @@
 .logo {
   font-size: 3rem;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .nav-list {
@@ -148,7 +155,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: rgba(200, 177, 203, 0.5);
+  background-color: rgba(118, 87, 123, 0.5);
    /* Semi-transparent overlay */
   text-align: center;
   z-index: 5; /* Ensure overlay appears below the header */

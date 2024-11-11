@@ -81,11 +81,10 @@ const About = () => {
     <Box>
       <Header />
       <Box
-        mt="5em"
+        mt="4em"
         display="flex"
         flexDirection={mobileLayout}
         justifyContent={teamLayout}
-        pt="3em"
       >
         <Box
           boxSize="xl"
