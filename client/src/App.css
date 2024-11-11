@@ -109,6 +109,19 @@
   z-index: 10; /* Ensure header appears above the image */
 }
 
+.header-with-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  z-index: 10; /* Ensure header appears above the image */
+}
+
 .logo {
   font-size: 3rem;
   font-weight: bold;

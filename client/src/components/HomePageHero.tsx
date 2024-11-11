@@ -16,8 +16,8 @@ const HeroSection = () => {
     lg: "4em",
   });
   const mobileLayout = useBreakpointValue<
-  ResponsiveValue<"center" | "left" | "right">
->({ base: "center", sm: "center", md: "left", lg: "left" });
+  ResponsiveValue<"center" | "flex-end" | "flex-start">
+>({ base: "center", sm: "center", md: "flex-end", lg: "flex-end" });
 
   return (
     <Box className="hero-container">

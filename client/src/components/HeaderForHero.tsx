@@ -22,7 +22,7 @@ import {
   
     return (
       <Flex
-        className= 'header'
+        className= 'header-with-hero'
         alignItems="center"
         gap="2"
         minWidth="max-content"
