@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AipuAmeh/Cleveland-Analytical/issues"
   },
-  "homepage": "https://github.com/AipuAmeh/Cleveland-Analytical#readme"
+  "homepage": "https://github.com/AipuAmeh/Cleveland-Analytical#readme",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
 }
