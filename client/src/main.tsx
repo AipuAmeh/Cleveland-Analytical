@@ -2,13 +2,13 @@ import { ChakraProvider } from '@chakra-ui/react'
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom';
 import theme from './utils/Themes.tsx';
-import HomePage from './pages/HomePage.tsx';
+import HomePage from './Pages/HomePage.tsx';
 import App from './App.tsx'
 import './index.css'
 
-import About from './pages/About.tsx';
-import ContactUs from './pages/ContactUs.tsx';
-import Forms from './pages/Forms.tsx';
+import About from './Pages/About.tsx';
+import ContactUs from './Pages/ContactUs.tsx';
+import Forms from './Pages/Forms.tsx';
 
 const router = createBrowserRouter([
   {
