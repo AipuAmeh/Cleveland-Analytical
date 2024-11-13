@@ -36,7 +36,7 @@ import {
             <Image
               boxSize="50px"
               w="100%"
-              src="public/images/cleveland-analytical.jpeg"
+              src="images/cleveland-analytical.jpeg"
               alt="cleveland-analytical-logo"
             ></Image>
           </Link>

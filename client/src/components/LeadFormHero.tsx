@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <Box className="hero-container">
       <HeaderForHero />
-      <img src="public/images/cle-lab-photo.png" alt="Hero" className="hero-image" />
+      <img src="images/cle-lab-photo.png" alt="Hero" className="hero-image" />
       <Box className="overlay" display="flex" alignItems="flex-end">
         <Text className="logo" mr={mobileSiteName} color='brand.snow'>
          Forms
