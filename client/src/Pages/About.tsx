@@ -99,7 +99,7 @@ const About = () => {
           <Image
             h="400px"
             w="600px"
-            src="src/images/cle-group.JPG"
+            src="public/images/cle-group.JPG"
             alt="test-lead-sample"
           />
         </Box>
@@ -174,7 +174,7 @@ const About = () => {
         >
           <Box w={teamWidth}>
             <BioCards
-              image={"src/images/ozimba-headshot.jpg"}
+              image={"public/images/ozimba-headshot.jpg"}
               name={"Ozimba Anyangwe"}
               bio={
                 "Ozimba Anyangwe is Chief Quality Officer. He has experience as a chemist running US EPA methods at Cleveland Water. Ozimba has experience teaching a first-year chemistry lab at Cuyahoga Community College and holds an MBA from Cleveland State University."
@@ -183,7 +183,7 @@ const About = () => {
           </Box>
           <Box w={teamWidth}>
             <BioCards
-              image={"src/images/mike-headshot.jpg"}
+              image={"public/images/mike-headshot.jpg"}
               name={"Dr. Michael Fricke"}
               bio={
                 "Michael Fricke, Ph.D. is Chief Scientific Officer. He has been an analytical development chemist in the pharmaceutical industry since 2006. He is an atomic spectroscopy specialist and Counselor for the Akron Section of the American Chemical Society. "
@@ -192,7 +192,7 @@ const About = () => {
           </Box>
           <Box w={teamWidth}>
             <BioCards
-              image={"src/images/tyler-headshot.jpg"}
+              image={"public/images/tyler-headshot.jpg"}
               name={"Tyler Akbar"}
               bio={
                 "Akbar Tyler is Chief Executive Officer. He has started several small businesses and was previously Director of Training and Healthy Homes for Environmental Health Watch. Akbar conducts home inspections for Lead and is a Lead risk assessor. "
