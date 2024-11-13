@@ -22,7 +22,7 @@ const HeroSection = () => {
   return (
     <Box className="hero-container">
       <HeaderForHero />
-      <img src="src/images/cle-lab-photo.png" alt="Hero" className="hero-image" />
+      <img src="public/images/cle-lab-photo.png" alt="Hero" className="hero-image" />
       <Box className="overlay" display='flex' alignItems={mobileLayout} >
         <Text  fontSize='3em' className="logo" mr={mobileSiteName}>
           Cleveland <br /> Analytical
