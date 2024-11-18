@@ -2,6 +2,8 @@ import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import { Box, Divider, Flex, Spacer, Text, Icon } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
+import { LuInstagram } from "react-icons/lu";
+import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -25,8 +27,8 @@ const Footer = () => {
             Contact Us
           </Text>
           <Text mt="0.5em">
-                <EmailIcon boxSize={4} mr="0.5em" /> info@clevelandanalytics.com
-              </Text>
+            <EmailIcon boxSize={4} mr="0.5em" /> info@clevelandanalytics.com
+          </Text>
 
           <Text className="contact-list" mt="0.5em">
             <Icon boxSize={7}>
@@ -42,6 +44,19 @@ const Footer = () => {
           <Text fontSize="1.2em" fontWeight="bold" px="3em">
             Follow Us
           </Text>
+          <Box gap={5} display='flex' justifyContent='center' mt='1em'>
+          <a href="https://www.instagram.com/cleanalytical/">
+            <Icon boxSize={7}>
+              <LuInstagram />
+            </Icon>
+          </a>
+          <a href="https://x.com/cleanalytical">
+            <Icon boxSize={7}>
+              <BsTwitterX />
+            </Icon>
+          </a>
+          </Box>
+
         </Box>
       </Box>
       <Divider borderColor="brand.snow" borderWidth="1px" />
