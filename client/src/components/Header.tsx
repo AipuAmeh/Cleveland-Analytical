@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   // header for mobile screens
   const isMobile = useBreakpointValue({ base: true, md: false, sm: false });
+  const mobileImage = useBreakpointValue({ base: 'fit-content', sm: 'fit-content', md: 'max-content', lg: 'max-content'});
 
   return (
     <Flex
@@ -35,7 +36,7 @@ const Header = () => {
         <Link to={"/"}>
           <Image
             boxSize="50px"
-            w="100%"
+            w={mobileImage}
             src="images/cleveland-analytical.jpeg"
             alt="cleveland-analytical-logo"
           ></Image>
