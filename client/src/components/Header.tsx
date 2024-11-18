@@ -39,6 +39,7 @@ const Header = () => {
             w={mobileImage}
             src="images/cleveland-analytical.jpeg"
             alt="cleveland-analytical-logo"
+             objectFit="cover"
           ></Image>
         </Link>
       </Box>
