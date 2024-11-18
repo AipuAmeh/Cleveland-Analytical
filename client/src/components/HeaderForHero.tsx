@@ -26,7 +26,7 @@ import {
         className= 'header-with-hero'
         alignItems="center"
         gap="2"
-        minWidth="max-content"
+        // minWidth="max-content"
         p={0}
         boxShadow="md"
         color='brand.snow'
@@ -53,6 +53,9 @@ import {
                 variant="outline"
               />
               <MenuList>
+              <MenuItem>
+                <Link to="/">Home</Link>
+              </MenuItem>
                 <MenuItem  color='black'>
                   <Link to="/about">About</Link>
                 </MenuItem>
