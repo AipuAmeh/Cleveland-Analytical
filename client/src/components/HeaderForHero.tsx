@@ -19,6 +19,7 @@ import {
   const HeaderForHero = () => {
     // header for mobile screens
     const isMobile = useBreakpointValue({ base: true, md: false, sm: false });
+    const mobileImage = useBreakpointValue({ base: '80%', sm: '80%', md: '100%', lg: '100%'});
   
     return (
       <Flex
@@ -35,9 +36,10 @@ import {
           <Link to={"/"}>
             <Image
               boxSize="50px"
-              w="100%"
+              w={mobileImage}
               src="images/cleveland-analytical.jpeg"
               alt="cleveland-analytical-logo"
+               objectFit="contain"
             ></Image>
           </Link>
         </Box>
