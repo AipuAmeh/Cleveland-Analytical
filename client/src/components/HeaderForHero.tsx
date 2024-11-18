@@ -19,7 +19,7 @@ import {
   const HeaderForHero = () => {
     // header for mobile screens
     const isMobile = useBreakpointValue({ base: true, md: false, sm: false });
-    const mobileImage = useBreakpointValue({ base: '50%', sm: '50%', md: '100%', lg: '100%'});
+    const mobileImage = useBreakpointValue({ base: '30%', sm: '30%', md: '100%', lg: '100%'});
   
     return (
       <Flex
