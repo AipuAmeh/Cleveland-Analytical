@@ -27,7 +27,7 @@ const Footer = () => {
             Contact Us
           </Text>
           <Text mt="0.5em">
-            <EmailIcon boxSize={4} mr="0.5em" /> info@clevelandanalytics.com
+            <EmailIcon boxSize={4} mr="0.5em" /> info@clevelandanalytical.com
           </Text>
 
           <Text className="contact-list" mt="0.5em">

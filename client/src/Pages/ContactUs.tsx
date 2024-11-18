@@ -143,7 +143,7 @@ const ContactUs = () => {
                 Contact Info
               </Text>
               <Text mt="0.5em">
-                <EmailIcon boxSize={5} mr="0.5em" /> info@clevelandanalytics.com
+                <EmailIcon boxSize={5} mr="0.5em" /> info@clevelandanalytical.com
               </Text>
               <Text mt="1em">
                 <PhoneIcon boxSize={5} mr="0.5em" /> (216) 785-9043
