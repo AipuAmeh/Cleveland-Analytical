@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   // header for mobile screens
   const isMobile = useBreakpointValue({ base: true, md: false, sm: false });
-  const mobileImage = useBreakpointValue({ base: 'fit-content', sm: 'fit-content', md: 'max-content', lg: 'max-content'});
+  const mobileImage = useBreakpointValue({ base: '30%', sm: '30%', md: '100%', lg: '100%'});
 
   return (
     <Flex
