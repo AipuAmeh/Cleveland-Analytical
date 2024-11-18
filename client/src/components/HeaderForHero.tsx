@@ -39,7 +39,6 @@ import {
               w={mobileImage}
               src="images/cleveland-analytical.jpeg"
               alt="cleveland-analytical-logo"
-               objectFit="contain"
             ></Image>
           </Link>
         </Box>
