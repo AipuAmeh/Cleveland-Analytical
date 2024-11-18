@@ -19,14 +19,12 @@ import {
   const HeaderForHero = () => {
     // header for mobile screens
     const isMobile = useBreakpointValue({ base: true, md: false, sm: false });
-    const mobileImage = useBreakpointValue({ base: '30%', sm: '30%', md: '100%', lg: '100%'});
   
     return (
       <Flex
         className= 'header-with-hero'
         alignItems="center"
         gap="2"
-        // minWidth="max-content"
         p={0}
         boxShadow="md"
         color='brand.snow'
