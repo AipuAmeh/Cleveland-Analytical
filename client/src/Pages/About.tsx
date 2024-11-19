@@ -186,7 +186,7 @@ const About = () => {
               image={"images/mike-headshot.jpg"}
               name={"Dr. Michael Fricke"}
               bio={
-                "Michael Fricke, Ph.D. is Chief Scientific Officer. He has been an analytical development chemist in the pharmaceutical industry since 2006. He is an atomic spectroscopy specialist and Counselor for the Akron Section of the American Chemical Society. "
+                "Michael Fricke, Ph.D. is Chief Scientific Officer. He has been an analytical development chemist in the pharmaceutical industry since 2006. He is an atomic spectroscopy specialist and Councilor for the Akron Section of the American Chemical Society. "
               }
             />
           </Box>
