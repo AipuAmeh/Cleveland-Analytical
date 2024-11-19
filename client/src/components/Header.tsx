@@ -34,7 +34,6 @@ const Header = () => {
         <Link to={"/"}>
           <Image
             boxSize="50px"
-            // w={mobileImage}
             src="images/cleveland-analytical.jpeg"
             alt="cleveland-analytical-logo"
           ></Image>
