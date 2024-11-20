@@ -177,7 +177,7 @@ const About = () => {
               image={"images/ozimba-headshot.jpg"}
               name={"Ozimba Anyangwe"}
               bio={
-                "Ozimba Anyangwe is Chief Quality Officer. He has experience as a chemist running US EPA methods at Cleveland Water. Ozimba has experience teaching a first-year chemistry lab at Cuyahoga Community College and holds an MBA from Cleveland State University."
+                "Ozimba Anyangwe is Chief Quality Officer. He has experience as a chemist running US EPA methods at Cleveland Water. Ozimba has experience working in the chemistry lab at Cuyahoga Community College and holds an MBA from Cleveland State University."
               }
             />
           </Box>
@@ -186,7 +186,7 @@ const About = () => {
               image={"images/mike-headshot.jpg"}
               name={"Dr. Michael Fricke"}
               bio={
-                "Michael Fricke, Ph.D. is Chief Scientific Officer. He has been an analytical development chemist in the pharmaceutical industry since 2006. He is an atomic spectroscopy specialist and Counselor for the Akron Section of the American Chemical Society. "
+                "Michael Fricke, Ph.D. is Chief Scientific Officer. He has been an analytical development chemist in the pharmaceutical industry since 2006. He is an atomic spectroscopy specialist and Councilor for the Akron Section of the American Chemical Society. "
               }
             />
           </Box>
