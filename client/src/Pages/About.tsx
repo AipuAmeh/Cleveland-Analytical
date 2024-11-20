@@ -177,7 +177,7 @@ const About = () => {
               image={"images/ozimba-headshot.jpg"}
               name={"Ozimba Anyangwe"}
               bio={
-                "Ozimba Anyangwe is Chief Quality Officer. He has experience as a chemist running US EPA methods at Cleveland Water. Ozimba has experience teaching a first-year chemistry lab at Cuyahoga Community College and holds an MBA from Cleveland State University."
+                "Ozimba Anyangwe is Chief Quality Officer. He has experience as a chemist running US EPA methods at Cleveland Water. Ozimba has experience working in the chemistry lab at Cuyahoga Community College and holds an MBA from Cleveland State University."
               }
             />
           </Box>
