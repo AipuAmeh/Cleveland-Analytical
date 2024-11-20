@@ -9,7 +9,7 @@ const Forms = () => {
       <LeadFormHero />
       <Box ml="4em" py="3em">
         <a
-          href="chain-of-custody/CLE-Chain-of-Custody-2024.pdf"
+          href="chain-of-custody/COC-2024.pdf"
           target="_blank"
           rel="noreferrer"
         >
@@ -21,7 +21,7 @@ const Forms = () => {
         </a>
 
         <a
-          href="chain-of-custody/CLE-Chain-of-Custody-2024.pdf"
+          href="chain-of-custody/COC-2024.pdf"
           target="_blank"
           rel="noreferrer"
         >
