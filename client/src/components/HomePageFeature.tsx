@@ -2,11 +2,12 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 type featureProps = {
     title: string,
-    desc: string,
-    icon: React.JSX.Element
+    desc: String,
+    icon: React.JSX.Element,
+    extra: string
 }
 
-const Features = ({ title, desc, icon, ...rest }: featureProps) => {
+const Features = ({ title, desc, icon, extra, ...rest }: featureProps) => {
   return (
     <Box
       p={8}
@@ -21,6 +22,8 @@ const Features = ({ title, desc, icon, ...rest }: featureProps) => {
         {title}
       </Heading>
       <Text mt={3}>{desc}</Text>
+      <br></br>
+      <Text>{extra}</Text>
     </Box>
   );
 };

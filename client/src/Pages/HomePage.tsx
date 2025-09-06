@@ -19,17 +19,21 @@ return (
           <Features 
         icon={<Icon fontSize="25px"> <LuMicroscope /> </Icon>}
           title='Specialized Lead Analysis'
-          desc='Cleveland Analytical specializes in elemental analysis, with a focus on lead testing using advanced ICP-OES technology.'
+          desc='Cleveland Analytical specializes in elemental analysis, with a focus on lead testing using advanced ICP-OES technology. 
+          '
+          extra='AIHA ID: 1129090'
           />
                     <Features 
           icon={<Icon fontSize="25px"> <FaShieldAlt /> </Icon>}
           title='EPA Accreditation'
           desc='The lab seeks accreditation from the EPA&lsquo;s NLLAP and will support Cleveland&lsquo;s 2019 Lead-safe Law.'
+          extra=''
           />
                     <Features 
           icon={<Icon fontSize="25px"> <FaGear /> </Icon>}
           title='State-of-the-Art Facility'
           desc='CLE Analytical&lsquo;s lab includes state-of-the-art equipment to ensure compliance with regulatory standards and safe handling practices.'
+          extra=''
           />
             </Flex>
         </Box>
