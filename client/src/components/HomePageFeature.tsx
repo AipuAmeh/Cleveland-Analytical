@@ -2,7 +2,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 type featureProps = {
     title: string,
-    desc: String,
+    desc: string,
     icon: React.JSX.Element,
     extra: string
 }
