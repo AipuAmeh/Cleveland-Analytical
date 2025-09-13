@@ -1,5 +1,6 @@
-import { Box, Text, useBreakpointValue, ResponsiveValue } from "@chakra-ui/react";
+import { Box, Text, useBreakpointValue, ResponsiveValue, Icon } from "@chakra-ui/react";
 import HeaderForHero from "./HeaderForHero";
+import { PiTrademarkRegistered } from "react-icons/pi";
 
 // work on margin for mobile
 const HeroSection = () => {
@@ -26,6 +27,7 @@ const HeroSection = () => {
       <Box className="overlay" display='flex' alignItems={mobileLayout} >
         <Text  fontSize='3em' className="logo" mr={mobileSiteName}>
           Cleveland <br /> Analytical
+{<Icon fontSize="25px"> <PiTrademarkRegistered /> </Icon>}
         </Text>
         <Text fontSize='1.5em' mr={mobileSlogan} >Empowering a Lead-Safe Future for Cleveland.</Text>
 
