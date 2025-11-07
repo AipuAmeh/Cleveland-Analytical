@@ -92,7 +92,7 @@ const ContactUs = () => {
     }
     if (name && company && email && phone && message) {
       const templateId = "template_edjxtco";
-      const serviceId = "service_v8gg88i";
+      const serviceId = "service_cwtcpka";
       const publicKey = "Z2w0bi6iIZ5aC0ixP";
       const templateParams = { name, company, email, phone, message };
       await emailjs.send(serviceId, templateId, templateParams, publicKey).then(
