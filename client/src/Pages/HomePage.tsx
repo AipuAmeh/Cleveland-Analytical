@@ -21,7 +21,8 @@ return (
           title='Specialized Lead Analysis'
           desc='Cleveland Analytical specializes in elemental analysis, with a focus on lead testing using advanced ICP-OES technology. 
           '
-          extra='AIHA ID: 1129090'
+          extra=""
+          // 'AIHA ID: 1129090'
           />
                     <Features 
           icon={<Icon fontSize="25px"> <FaShieldAlt /> </Icon>}
