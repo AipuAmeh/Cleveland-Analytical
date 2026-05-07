@@ -135,9 +135,7 @@ const About = () => {
             py={mobileYPadding}
             fontSize={mobileGeneralFont}
           >
-            The lab is currently pursuing accreditation from the US EPA's
-            National Lead Laboratory Accreditation Program (NLLAP) and will soon
-            begin accepting samples for analysis. Its primary source of samples
+            The lab is accredited by the US EPA's National Lead Laboratory Accreditation Program (NLLAP) and is currently accepting samples for analysis. Its primary source of samples
             will be the City of Cleveland, which enacted a Lead-safe law in 2019
             requiring rental properties built before 1978 to be certified as
             lead-safe. This initiative addresses the concerning issue of lead
@@ -153,10 +151,10 @@ const About = () => {
             py={mobileYPadding}
             fontSize={mobileGeneralFont}
           >
-            CLE Analytical’s facility is designed to meet high standards,
+            CLE Analytical&lsquo;s facility is designed to meet high standards,
             featuring advanced equipment, including a qualified ICP-OES,
-            laboratory exhaust hoods, and sample preparation areas. The lab will
-            implement a quality and sample management system to ensure
+            laboratory exhaust hoods, and sample preparation areas. The lab
+            implements a quality and sample management system to ensure
             compliance with all regulatory authorities.
           </Text>
         </Box>
