@@ -28,7 +28,7 @@ return (
           icon={<Icon fontSize="25px"> <FaShieldAlt /> </Icon>}
           title='EPA Accreditation'
           desc='The lab is accredited by the US EPA&lsquo;s NLLAP and will support Cleveland&lsquo;s 2019 Lead-safe Law. 
-          AIHA LAP, LLC #1129090, OH Lab ID # 10058.'
+          AIHA LAP, LLC #1129090, OH Lab ID # 1132440.'
           extra=''
           />
                     <Features 
